@@ -1,0 +1,121 @@
+.header {
+	background-color: #ff99ff;
+	padding: 5px;
+	text-align: right;
+	
+}
+
+.header {
+	background-color: #ccffff;
+	overflow: hidden;
+}
+
+.header a {
+	float: right;
+	display: block;
+	color: #800000;
+	text-align: right;
+	padding: 14px 16px;	
+}
+
+.header a:hover{
+		background-color: #ccff33;
+		color: black;
+}
+
+
+table#details {
+	font-family: Arial;
+display:none;
+
+}
+#details:target{
+	display:block;
+}	
+
+table#details td, table#details th {
+	
+	padding: 10px;
+}
+
+table#details tr:nth-child(even){
+	background-color: #ccccff;
+}
+
+table#details th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #003300;
+	color: white;
+}
+
+table#details tr:hover {
+	background-color: #ff00ff;
+}
+
+table#details td {
+	text-align: left;
+}
+table#loginfo {
+	font-family: Arial;	
+display:none;
+
+}
+#loginfo:target{
+	display:block;
+}	
+table#loginfo td, table#loginfo th {
+	
+	padding: 10px;
+}
+
+table#loginfo tr:nth-child(even){
+	background-color: #ccccff;
+}
+
+table#loginfo th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #003300;
+	color: white;
+}
+
+table#loginfo tr:hover {
+	background-color: #ff00ff;
+}
+
+table#loginfo td {
+	text-align: left;
+}
+
+img {
+	opacity: 0.5;
+}
+
+img:hover {
+	opacity: 1.0;
+}
+
+div#pic {
+	margin: 2x;
+	padding:5px;
+	float:left;
+	
+}
+section#about{
+	display:none
+}
+#about:target{
+	display:block;
+}	
+
+
+div#desc {
+	padding: 3px;
+	text-align: center;
+
+}
+
+

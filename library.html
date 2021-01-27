@@ -1,0 +1,184 @@
+<html>
+<head>
+	<link rel="stylesheet"  href="library_style.css">
+	<h1 align = "center">
+<font color="red" face="Verdana" size="6">
+				Welcome to our Library 
+			</font></h1>
+</head>
+  
+  
+
+   <body>
+		
+	
+	<div class = "header" align = "left">
+ <a href="#details" >Registration </a>
+  <a href="#loginfo"  >Log In</a>
+  <a href="#about">About</a>
+  <div class="search-container" align="right">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+		
+ 
+<br>
+<br>
+	<form method = "GET" action="http://library.asp">	
+
+		<table width="50%" frame="BOX"  align="Center" bordercolor="red" id = "loginfo">
+			<tbody>
+			<tr align="left">
+					<td width="30%">
+						
+  
+                     <label for="login">Log in
+					 </label><br></td>
+				</tr>
+				<tr align="left">
+					<td width="30%"><label for="uname">User name:</label><br></td>
+					<td width="30%"><input type="text" id="uname" name="uname" required><br><br></td>
+				</tr>
+		
+				<tr align="left">
+					<td width="30%"><label for="password">Password:</label><br></td>
+					<td width="30%"><input type="text" id="password" name="password" required><br><br></td>
+			    </tr>
+				<tr align="center" 
+				>
+				<td call span = "2"	width="30%" ><input type="submit" value="Log In">
+		<input type="Reset" value="Reset"><br><br></td>
+			    </tr>
+				</tbody>
+				</table>
+			
+				<br>
+				<br>
+			
+				<table width="50%" frame="BOX" align="Center" bordercolor="red" id = "details" >
+			<tbody>
+				<tr align="left">
+					<td width="30%">
+                     <label for="personal information">Personal Information:</label><br></td>
+				</tr>
+				<tr align="left">
+					<td width="30%">
+                  <label for="fname">First name:</label><br></td>
+					<td width="30%"><input type="text" id="fname" name="fname" required><br><br></td>
+				</tr>
+		     <tr align="left">
+					<td width="30%"><label for="lname">Last name:</label><br></td>
+					<td width="30%"><input type="text" id="lname" name="lname" required><br><br></td>
+			    </tr>
+				<tr align="left">
+					<td width="30%"><label for="birthday">Date Of Birth:</label><br></td>
+					<td width="30%"><input type="date" id="birthday" name="birthday" required><br><br></td>
+				</tr>
+				
+				<tr align="left">
+				    <td width="30%"><label for="Gender">Gender:</label><br></td>
+				    <td width = "30%">
+				       <input type="radio" id="male" name="gender" value="male" checked>
+                       <label for="male">Male</label>
+                           <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                 <label for="other">Other</label><br><br></td>
+                </tr>
+					<tr align="left">
+					<td width="30%"><label for="address">Address:</label><br></td>
+					<td width="30%"><input type="textarea" id="address" name="address" required><br><br></td>
+				</tr>
+				
+				
+				<tr align="left">
+				    <td width="30%"><label for="source">Provice:</label><br><br></td>
+		            <td width = "30%">
+		                  <select  name="sources">
+                          <option value="Edmonton">Edmonton</option>
+                          <option value="Whitehorse">Whitehorse</option>
+                          <option value="Quebec">Quebec</option>
+                          <option value="Toronto">Toronto</option>
+                          <option value="Monteral">Monteral</option>
+						   <option value="Ontario">Ontario</option>
+                          <option value="Ottawa">Ottawa</option>
+                          </select>
+		            </td>
+				
+				</tr>
+
+				<tr align="left">
+					<td width="30%">
+                     <label for="personal information">Contact Information:</label><br><br></td>
+				</tr>
+				
+				
+				<tr align="left">
+					<td width="30%"><label for="contact">Contact:</label><br><br></td>
+					<td width="30%"><input type="tel" id="contact" name="contact"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br></td>
+			    </tr>
+				
+				<tr align="left">
+					<td width="30%"><label for="e-mail">E-mail:</label><br><br></td>
+					<td width="30%"><input type="e-mail" id="e-mail" name="E-mail" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@gmail.com" required><br><br></td>
+			    </tr>
+				
+				
+				<tr align="left">
+					<td width="30%"><label for="fax">Fax:</label><br><br></td>
+					<td width="30%"><input type="number" id="fax" name="fax" pattern="[0-9]{10}" required><br><br></td>
+			    </tr>
+				
+			    <tr align="left">
+				    <td width="30%"><label for="contact method">Prefered Contact Method::</label><br><br></td>
+			          <br><br>
+			        <td width = "30%">
+			           <input type="checkbox" name="b1" value="By phone" checked />
+			           <label>By phone</label>
+			           <input type="checkbox" name="b2" value="By e-mail" />
+			           <label>By e-mail</label>
+			           <input type="checkbox" name="b3" value="By fax" />
+			           <label>By fax</label>
+			           <input type="checkbox" name="b4" value="By letter" />
+			           <label>By letter</label>
+			        </label><br><br>  </td>
+	           	</tr>
+				
+					
+				<tr align="left">
+				    <td width="30%"><label for="contact time">Prefered Contact time:</label><br><br></td>
+				    <td width = "30%">
+				       <input type="radio" id="morning" name="time" value="morning" checked>
+                       <label for="Morning">Morning</label>
+                           <input type="radio" id="Eafternoon" name="time" value="Eafternoon">
+                            <label for="Eafternoon">Early Afternoon</label>
+                                <input type="radio" id="afternoon" name="time" value="afternoon">
+                                 <label for="afternoon">Late Afternoon</label><br><br></td>
+                </tr>
+				<tr align="center" >
+				<td call span = "2"	width="30%" align = "center"><input type="submit" value="Log In">
+		<input type="Reset" value="Reset"><br><br></td>
+			    </tr>
+		        </tbody>
+			          </table>
+		
+		<br>
+		<br>
+		 </form>
+		<section id = "about">
+		 <div id="pic" align = "center">
+        <img src="HTML.jpg" width = "320" height = "160" >
+			<div id="desc">HTML 5</div></div>
+			 <div id="pic" align = "center">
+         <img src="CSS.jpg"  width = "320" height = "160" >
+			<div id="desc">CSS</div></div>
+			 <div id="pic" align = "center">
+			<img src="JQUERY.jpg"  width = "320" height = "160">
+			<div id="desc">JQUERY</div>
+    </div>
+	</section>
+    </body>
+</html>
